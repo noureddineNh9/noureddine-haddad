@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/noureddine-haddad/static/css/main.5366712f.chunk.css",
+    "main.js": "/noureddine-haddad/static/js/main.7f8db06a.chunk.js",
+    "main.js.map": "/noureddine-haddad/static/js/main.7f8db06a.chunk.js.map",
+    "runtime-main.js": "/noureddine-haddad/static/js/runtime-main.bc4601c5.js",
+    "runtime-main.js.map": "/noureddine-haddad/static/js/runtime-main.bc4601c5.js.map",
+    "static/js/2.b2f9bc0a.chunk.js": "/noureddine-haddad/static/js/2.b2f9bc0a.chunk.js",
+    "static/js/2.b2f9bc0a.chunk.js.map": "/noureddine-haddad/static/js/2.b2f9bc0a.chunk.js.map",
+    "static/js/3.06392c13.chunk.js": "/noureddine-haddad/static/js/3.06392c13.chunk.js",
+    "static/js/3.06392c13.chunk.js.map": "/noureddine-haddad/static/js/3.06392c13.chunk.js.map",
+    "index.html": "/noureddine-haddad/index.html",
+    "static/css/main.5366712f.chunk.css.map": "/noureddine-haddad/static/css/main.5366712f.chunk.css.map",
+    "static/js/2.b2f9bc0a.chunk.js.LICENSE.txt": "/noureddine-haddad/static/js/2.b2f9bc0a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc4601c5.js",
+    "static/js/2.b2f9bc0a.chunk.js",
+    "static/css/main.5366712f.chunk.css",
+    "static/js/main.7f8db06a.chunk.js"
+  ]
+}
