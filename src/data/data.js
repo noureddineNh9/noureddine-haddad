@@ -25,7 +25,7 @@ const data = {
       dataFilter: "portfolio",
     },
     {
-      name: "Navbar/Sidebar",
+      name: "Navbar & Sidebar",
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "http://127.0.0.1:8887/ssd/My%20projects/my-website-react/src/mini-projects/project_4/index.html",
