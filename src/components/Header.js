@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import imgProfile from "../images/profile_1.jpg";
 
 function Header() {
   useEffect(() => {}, []);
@@ -16,7 +17,7 @@ function Header() {
     <div className="header">
       <div className="img-container">
         <div className="img-border"></div>
-        <img src="assets/images/profile_1.jpg" alt="profile" />
+        <img src={imgProfile} alt="profile" />
       </div>
       <div className="name-container">
         <h3>Noureddine Haddad</h3>

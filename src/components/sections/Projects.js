@@ -8,27 +8,17 @@ function Projects() {
     setFilteredProjects(data.projects);
   }, []);
 
-  const search = (e) => {
-    setFilteredProjects(
-      data.projects.filter((p) =>
-        p.name.toUpperCase().includes(e.target.value.toUpperCase())
-      )
-    );
-  };
-
   const filterProjects = (e) => {
     const filterValue = e.target.getAttribute("data-filter");
 
-    if (filterValue == "*") setFilteredProjects(data.projects);
+    if (filterValue === "*") setFilteredProjects(data.projects);
     else {
       if (filterValue) {
         setFilteredProjects(
-          data.projects.filter((p) => p.dataFilter == filterValue)
+          data.projects.filter((p) => p.dataFilter === filterValue)
         );
       }
     }
-
-    console.log(filterValue);
   };
 
   return (
