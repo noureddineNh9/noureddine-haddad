@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SectionTitle } from "../layouts/Heading";
 import data from "../../data/data";
+import $ from "jquery";
 
 function Projects() {
   const [FilteredProjects, setFilteredProjects] = useState([]);
@@ -11,13 +12,25 @@ function Projects() {
   const filterProjects = (e) => {
     const filterValue = e.target.getAttribute("data-filter");
 
-    if (filterValue === "*") setFilteredProjects(data.projects);
-    else {
-      if (filterValue) {
-        setFilteredProjects(
-          data.projects.filter((p) => p.dataFilter === filterValue)
-        );
-      }
+    if (filterValue === "*") {
+      $(".card")
+        .removeClass("is-animated")
+        .fadeOut(10)
+        .promise()
+        .done(function () {
+          $(".card").addClass("is-animated").fadeIn(10);
+        });
+    } else {
+      $(".card")
+        .removeClass("is-animated")
+        .fadeOut(10)
+        .promise()
+        .done(function () {
+          $(".card")
+            .filter(`[data-filter = "${filterValue}"]`)
+            .addClass("is-animated")
+            .fadeIn(10);
+        });
     }
   };
 
@@ -51,23 +64,21 @@ function Projects() {
         <div className="projects__container">
           {FilteredProjects.map((p, i) => (
             <>
-              <a href={p.url} target="_blank">
-                <article className="card">
-                  <div
-                    className="img-part"
-                    style={{
-                      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${p.img})`,
-                      height: "200px",
-                      backgroundPosition: "top",
-                      backgroundSize: "cover",
-                    }}
-                  ></div>
-                  <div className="text-part">
-                    <h3>{p.name}</h3>
-                    <p>{p.description}</p>
-                  </div>
-                </article>
-              </a>
+              <article className="card" data-filter={p.dataFilter}>
+                <div
+                  className="img-part"
+                  style={{
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${p.img})`,
+                    height: "200px",
+                    backgroundPosition: "top",
+                    backgroundSize: "cover",
+                  }}
+                ></div>
+                <div className="text-part">
+                  <h3>{p.name}</h3>
+                  <p>{p.description}</p>
+                </div>
+              </article>
             </>
           ))}
         </div>
