@@ -5,7 +5,7 @@ const data = {
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "http://127.0.0.1:8887/ssd/My%20projects/my-website-react/src/mini-projects/project_1/index.html",
-      img: "/assets/images/img-project-1.PNG",
+      img: "img-project-1.PNG",
       dataFilter: "javascript",
     },
     {
@@ -13,7 +13,7 @@ const data = {
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "http://127.0.0.1:8887/ssd/My%20projects/my-website-react/src/mini-projects/project_2/index.html",
-      img: "/assets/images/img-project-2.PNG",
+      img: "img-project-2.PNG",
       dataFilter: "game",
     },
     {
@@ -21,7 +21,7 @@ const data = {
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "http://127.0.0.1:8887/ssd/My%20projects/my-website-react/src/mini-projects/project_3/index.html",
-      img: "/assets/images/img-project-3.PNG",
+      img: "img-project-3.PNG",
       dataFilter: "portfolio",
     },
     {
@@ -29,7 +29,7 @@ const data = {
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "http://127.0.0.1:8887/ssd/My%20projects/my-website-react/src/mini-projects/project_4/index.html",
-      img: "/assets/images/img-project-4.PNG",
+      img: "img-project-4.PNG",
       dataFilter: "game",
     },
     {
@@ -37,7 +37,7 @@ const data = {
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "http://127.0.0.1:8887/ssd/My%20projects/my-website-react/src/mini-projects/progress-steps/index.html",
-      img: "/assets/images/img-project-5.PNG",
+      img: "img-project-5.PNG",
       dataFilter: "portfolio",
     },
     {
@@ -45,7 +45,7 @@ const data = {
       description:
         "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
       url: "https://noureddinenh9.github.io/dice-game",
-      img: "/assets/images/img-project-6.PNG",
+      img: "img-project-6.PNG",
       dataFilter: "game",
     },
   ],

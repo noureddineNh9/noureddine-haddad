@@ -51,12 +51,12 @@ function Projects() {
         <div className="projects__container">
           {FilteredProjects.map((p, i) => (
             <>
-              <a key={i} href={p.url} target="_blank">
+              <a href={p.url} target="_blank">
                 <article className="card">
                   <div
                     className="img-part"
                     style={{
-                      backgroundImage: `url(${p.img})`,
+                      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${p.img})`,
                       height: "200px",
                       backgroundPosition: "top",
                       backgroundSize: "cover",
