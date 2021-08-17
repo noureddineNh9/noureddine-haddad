@@ -61,14 +61,20 @@ a:hover {
 }
 
 section {
+  animation: .5s sectionAnimation ease;
+}
+
+.center__items{
+  
+
 }
 
 @keyframes sectionAnimation {
   0% {
-    transform: translateX(100%);
+    transform: scale(0%);
   }
 
   100% {
-    transform: translateX(0%);
+    transform: none;
   }
 }

@@ -12,6 +12,11 @@ function Projects() {
   const filterProjects = (e) => {
     const filterValue = e.target.getAttribute("data-filter");
 
+    $(".filter-link").removeClass('filter-active').promise().then(() => {
+      e.target.classList.add("filter-active");
+    })
+    
+
     if (filterValue === "*") {
       $(".card")
         .removeClass("is-animated")
@@ -43,18 +48,18 @@ function Projects() {
             <ul id="projects-flters">
               <li
                 data-filter="*"
-                className="filter-active"
+                className="filter-link filter-active"
                 onClick={filterProjects}
               >
                 All
               </li>
-              <li data-filter="game" onClick={filterProjects}>
+              <li data-filter="game" className="filter-link " onClick={filterProjects}>
                 game
               </li>
-              <li data-filter="portfolio" onClick={filterProjects}>
+              <li data-filter="portfolio" className="filter-link " onClick={filterProjects}>
                 portfolio
               </li>
-              <li data-filter="javascript" onClick={filterProjects}>
+              <li data-filter="javascript" className="filter-link " onClick={filterProjects}>
                 javascript
               </li>
             </ul>
@@ -77,6 +82,9 @@ function Projects() {
                 <div className="text-part">
                   <h3>{p.name}</h3>
                   <p>{p.description}</p>
+                  <div  className="preview-link-div">
+                    <a href={p.url} className="preview-link" target="_blank">Preview</a>
+                  </div>
                 </div>
               </article>
             </>
