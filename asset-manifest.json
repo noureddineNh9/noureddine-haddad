@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/noureddine-haddad/static/css/main.cf336d01.chunk.css",
-    "main.js": "/noureddine-haddad/static/js/main.24305d9f.chunk.js",
-    "main.js.map": "/noureddine-haddad/static/js/main.24305d9f.chunk.js.map",
-    "runtime-main.js": "/noureddine-haddad/static/js/runtime-main.bc4601c5.js",
-    "runtime-main.js.map": "/noureddine-haddad/static/js/runtime-main.bc4601c5.js.map",
-    "static/js/2.b2f9bc0a.chunk.js": "/noureddine-haddad/static/js/2.b2f9bc0a.chunk.js",
-    "static/js/2.b2f9bc0a.chunk.js.map": "/noureddine-haddad/static/js/2.b2f9bc0a.chunk.js.map",
-    "static/js/3.06392c13.chunk.js": "/noureddine-haddad/static/js/3.06392c13.chunk.js",
-    "static/js/3.06392c13.chunk.js.map": "/noureddine-haddad/static/js/3.06392c13.chunk.js.map",
+    "main.css": "/noureddine-haddad/static/css/main.40248467.chunk.css",
+    "main.js": "/noureddine-haddad/static/js/main.b566ff75.chunk.js",
+    "main.js.map": "/noureddine-haddad/static/js/main.b566ff75.chunk.js.map",
+    "runtime-main.js": "/noureddine-haddad/static/js/runtime-main.72c7ff33.js",
+    "runtime-main.js.map": "/noureddine-haddad/static/js/runtime-main.72c7ff33.js.map",
+    "static/js/2.cd99c773.chunk.js": "/noureddine-haddad/static/js/2.cd99c773.chunk.js",
+    "static/js/2.cd99c773.chunk.js.map": "/noureddine-haddad/static/js/2.cd99c773.chunk.js.map",
+    "static/js/3.6c9a8acd.chunk.js": "/noureddine-haddad/static/js/3.6c9a8acd.chunk.js",
+    "static/js/3.6c9a8acd.chunk.js.map": "/noureddine-haddad/static/js/3.6c9a8acd.chunk.js.map",
     "index.html": "/noureddine-haddad/index.html",
-    "static/css/main.cf336d01.chunk.css.map": "/noureddine-haddad/static/css/main.cf336d01.chunk.css.map",
-    "static/js/2.b2f9bc0a.chunk.js.LICENSE.txt": "/noureddine-haddad/static/js/2.b2f9bc0a.chunk.js.LICENSE.txt",
+    "static/css/main.40248467.chunk.css.map": "/noureddine-haddad/static/css/main.40248467.chunk.css.map",
+    "static/js/2.cd99c773.chunk.js.LICENSE.txt": "/noureddine-haddad/static/js/2.cd99c773.chunk.js.LICENSE.txt",
     "static/media/profile_1.5e650dd7.jpg": "/noureddine-haddad/static/media/profile_1.5e650dd7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc4601c5.js",
-    "static/js/2.b2f9bc0a.chunk.js",
-    "static/css/main.cf336d01.chunk.css",
-    "static/js/main.24305d9f.chunk.js"
+    "static/js/runtime-main.72c7ff33.js",
+    "static/js/2.cd99c773.chunk.js",
+    "static/css/main.40248467.chunk.css",
+    "static/js/main.b566ff75.chunk.js"
   ]
 }
