@@ -48,6 +48,14 @@ const data = {
       img: "img-project-6.PNG",
       dataFilter: "game",
     },
+    {
+      name: "Tic Tac Toe",
+      description:
+        "HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference",
+      url: "https://noureddinenh9.github.io/tic-tac-toe",
+      img: "img-project-7.PNG",
+      dataFilter: "game",
+    }
   ],
 };
 export default data;

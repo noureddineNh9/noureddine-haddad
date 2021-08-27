@@ -13,7 +13,7 @@ function HomePage() {
       <Header />
       <div className="main">
         <Switch>
-          <Route path="/home">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/about">

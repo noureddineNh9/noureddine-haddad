@@ -25,7 +25,7 @@ function Header() {
       <div className="menu">
         <ul>
           <li>
-            <Link onClick={handleClick} className="nav-link active" to="/home">
+            <Link onClick={handleClick} className="nav-link active" to="/">
               Home
             </Link>
           </li>
