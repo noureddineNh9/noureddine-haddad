@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/noureddine-haddad/static/css/main.40248467.chunk.css",
-    "main.js": "/noureddine-haddad/static/js/main.b566ff75.chunk.js",
-    "main.js.map": "/noureddine-haddad/static/js/main.b566ff75.chunk.js.map",
+    "main.js": "/noureddine-haddad/static/js/main.371eab37.chunk.js",
+    "main.js.map": "/noureddine-haddad/static/js/main.371eab37.chunk.js.map",
     "runtime-main.js": "/noureddine-haddad/static/js/runtime-main.72c7ff33.js",
     "runtime-main.js.map": "/noureddine-haddad/static/js/runtime-main.72c7ff33.js.map",
     "static/js/2.cd99c773.chunk.js": "/noureddine-haddad/static/js/2.cd99c773.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.72c7ff33.js",
     "static/js/2.cd99c773.chunk.js",
     "static/css/main.40248467.chunk.css",
-    "static/js/main.b566ff75.chunk.js"
+    "static/js/main.371eab37.chunk.js"
   ]
 }
