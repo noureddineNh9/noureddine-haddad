@@ -16,6 +16,9 @@ function HomePage() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route exact path="/noureddine-haddad">
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
