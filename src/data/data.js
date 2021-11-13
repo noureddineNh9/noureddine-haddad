@@ -1,4 +1,25 @@
 const data = {
+  Info: {
+    name: "Noureddine Haddad",
+    adresse: "Morocco, Casablanca",
+    email: "noureddine.haddad@outlook.com",
+    tel: "+212-681-931-968",
+    gitHub: "https://github.com/noureddineNh9",
+    linkedIn: "https://linkedin.com/in/noureddineNh9",
+    instagram: "https://www.instagram.com/noureddine_nh9/",
+    education: [
+      {
+        name: "Scientist baccalaureate diploma in mathematics (pretty good)",
+        date: "2018",
+        place: "Casablanca"
+      },
+      {
+        name: "fundamental licence in Databases ",
+        date: "2022",
+        place: "Univesity Hassan 2"
+      }
+    ]
+  },
   projects: [
     {
       name: "Color Flipper",

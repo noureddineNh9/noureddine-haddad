@@ -43,12 +43,33 @@ body {
   font-weight: 400;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .header {
-    width: 350px !important;
+    width: 400px !important;
   }
 
   .main {
-    margin-left: 350px !important;
+    margin-left: 400px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1400px) {
+  .header {
+    width: 350px;
+  }
+
+  .main {
+    margin-left: 320px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    left: -320px !important;
+  }
+
+  #sidebar-btn {
+    display: inline-block !important;
+  }
+  .side__navbar__background {
+    display: inline-block !important;
   }
 }

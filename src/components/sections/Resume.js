@@ -3,7 +3,7 @@ import React from "react";
 function Resume() {
   return (
     <section className="p-5">
-      <div className="container resume">
+      <div className="resume container">
         <div>
           <h3 className="text-5">
             Hi, I'am <span>Noureddine Haddad</span>
@@ -39,34 +39,71 @@ function Resume() {
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
+              <h4>fundamental licence in Databases</h4>
+              <h5>2022</h5>
               <p>
-                <em>Rochester Institute of Technology, Rochester, NY</em>
-              </p>
-              <p>
-                Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
-                iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
-                nerada porti sand markend
+                <em>Univesity Hassan 2</em>
               </p>
             </div>
             <div className="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
+              <h4>Scientist baccalaureate diploma in mathematics</h4>
+              <h5>2018</h5>
               <p>
-                <em>Rochester Institute of Technology, Rochester, NY</em>
-              </p>
-              <p>
-                Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
-                reiciendis et quis Eius vel ratione eius unde vitae rerum
-                voluptates asperiores voluptatem Earum molestiae consequatur
-                neque etlon sader mart dila
+                <em>Casablanca</em>
               </p>
             </div>
           </div>
         </div>
 
         <h2 className="resume-title">Skills</h2>
+
+        <div className="skills row">
+          <div className="col-lg-4">
+            <span className="skill"> LANGUAGES </span>
+            <ul className="skills-list">
+              <li>HTML5</li>
+              <li>CSS3/SASS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>C , C++ & C#</li>
+              <li>PHP7+</li>
+              <li>JAVA</li>
+            </ul>
+          </div>
+          <div className="col-lg-4">
+            <span className="skill"> FRAMEWORKS </span>
+            <ul className="skills-list">
+              <li>React & Redux</li>
+              <li>Node/Express</li>
+            </ul>
+          </div>
+          <div className="col-lg-4">
+            <span className="skill"> TOOLS </span>
+            <ul className="skills-list">
+              <li>Git/GitHub</li>
+              <li>Postman</li>
+              <li>Webpack</li>
+            </ul>
+          </div>
+        </div>
+        <div className="skills row">
+          <div className="col-lg-4">
+            <span className="skill"> Design & Other </span>
+            <ul className="skills-list">
+              <li>Photoshop</li>
+              <li>Adobe XD</li>
+              <li>MySql</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+
+        {
+        /*
+          
 
         <div className="skills row">
           <div className="col-lg-6" data-aos="fade-up">
@@ -151,6 +188,9 @@ function Resume() {
             </div>
           </div>
         </div>
+            
+          */
+        }
 
         <div className="row justify-content-center m-5">
           <button className="download-btn">Download CV</button>

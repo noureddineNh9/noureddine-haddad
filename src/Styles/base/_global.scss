@@ -1,12 +1,11 @@
 .main {
-  background-color: $color-grey-light-1;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   text-transform: capitalize;
   margin-bottom: 0.75rem;
   color: $color-grey-dark-3;
@@ -56,17 +55,11 @@ a:hover {
 }
 
 .main {
-  margin-left: 320px;
   min-height: 100vh;
 }
 
 section {
-  animation: .5s sectionAnimation ease;
-}
-
-.center__items{
-  
-
+  animation: 0.5s sectionAnimation ease;
 }
 
 @keyframes sectionAnimation {
