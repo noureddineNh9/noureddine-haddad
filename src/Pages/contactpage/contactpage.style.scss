@@ -1,0 +1,29 @@
+#contact {
+  .section__title {
+  }
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: none;
+  width: 100%;
+  padding: 10px;
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #737373af;
+  }
+}
+
+.col-form-label {
+  color: #000;
+  font-size: 13px;
+}
+.btn,
+.form-control,
+.custom-select {
+  min-height: 45px;
+  border-radius: 0;
+}

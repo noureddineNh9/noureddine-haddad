@@ -1,0 +1,159 @@
+.card {
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+  overflow: hidden;
+  color: #fff;
+  height: 300px;
+
+  .face {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: all 0.7s;
+    width: 100%;
+    height: 100%;
+    &::before {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      content: '';
+      background: linear-gradient(
+          0deg,
+          #00203f 0%,
+          #00203fe0 40%,
+          #00203fba 100%
+        )
+        no-repeat;
+      opacity: 0;
+      z-index: 10;
+      transition: all 0.5s ease;
+    }
+
+    &::after {
+      $padd: 8%;
+      position: absolute;
+      top: $padd;
+      right: $padd;
+      bottom: $padd;
+      left: $padd;
+      border: 1px solid rgb(255, 255, 255);
+      z-index: 20;
+      content: '';
+      border-radius: 5px;
+      opacity: 0;
+    }
+
+    .title-wrapper {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      right: 15%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+      z-index: 30;
+      transform: translateY(50%);
+      transition: transform 0.28s ease;
+      .title {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+
+      .subtitle {
+        opacity: 0;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      .preview-link {
+        cursor: pointer;
+        opacity: 0;
+        position: relative;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        width: 100%;
+        z-index: 30;
+        &:hover {
+          letter-spacing: 2px;
+        }
+        &::before {
+          content: '';
+          height: 1px;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          margin-left: -8px;
+          transform: translateX(-200%);
+        }
+        &::after {
+          content: '';
+          transform: translateX(200%);
+          height: 1px;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &.aze {
+      &::before {
+        opacity: 0.9;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.08);
+      &::before {
+        opacity: 0.5;
+      }
+      &::after {
+        //opacity: 1;
+        transition-delay: 0.2s;
+        transition-duration: 0.1s;
+      }
+      .title-wrapper {
+        transform: translateY(-30%);
+        opacity: 1;
+      }
+      .subtitle {
+        opacity: 1;
+        transition-delay: 0.2s;
+        transition-duration: 0.2s;
+      }
+      .preview-link {
+        opacity: 1;
+        transition-delay: 0.3s;
+        transition-duration: 0.3s;
+        &::after {
+          transform: translateX(0%);
+          transition-delay: 0.3s;
+          transition-duration: 0.2s;
+        }
+        &::before {
+          transform: translateX(-100%);
+          transition-delay: 0.3s;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
+}

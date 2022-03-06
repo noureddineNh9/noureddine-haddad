@@ -1,0 +1,104 @@
+.modal {
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.39);
+  display: inline-block;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.modal .modal__wrap {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 50px 25px;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal .modal__wrap::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.modal .modal__wrap::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal__wrap::-webkit-scrollbar-thumb {
+  background-color: rgba(129, 129, 129, 0.521);
+}
+
+.modal .modal__wrap .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 18px 20px;
+  background-color: #e9e9e9;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.modal .modal__wrap .close::before {
+  content: '';
+  width: 60%;
+  height: 1px;
+  position: absolute;
+  background: #8f8f8f;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal .modal__wrap .close::after {
+  content: '';
+  width: 60%;
+  height: 1px;
+  position: absolute;
+  background: #8b8b8b;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal .modal__wrap .close:hover {
+  background-color: #4b7984;
+}
+
+.modal .modal__wrap .close:hover::before, .modal .modal__wrap .close:hover::after {
+  background-color: #fff;
+}
+
+@media (max-width: 900px) {
+  .modal__wrap {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.disableModal {
+  opacity: 0;
+  z-index: -10;
+}
+
+.disableModal .modal__wrap {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+/*# sourceMappingURL=style.css.map */
