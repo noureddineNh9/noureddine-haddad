@@ -45,8 +45,7 @@ function AboutPage() {
       </div>
       <div className="my__description mb-48">
         <p>
-          Hi! 👋 I'm a <strong>Full-stack JavaScript Developer</strong> based on
-          Morocco.
+          Hi! 👋 I'm a <strong>Full-stack JavaScript Developer</strong>.
         </p>
         <p>
           Skilled in ES6+, NodeJS and ReactJS, eager to join your team to

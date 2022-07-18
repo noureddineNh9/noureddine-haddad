@@ -10,7 +10,10 @@ function Index(props) {
 
   return (
     <>
-      <article className="card" data-filter={props.data.dataFilter}>
+      <article
+        className={`project__card ${props.className && props.className}`}
+        data-filter={props.data.dataFilter}
+      >
         <a
           type="button"
           className="face"

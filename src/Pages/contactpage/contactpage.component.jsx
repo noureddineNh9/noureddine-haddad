@@ -1,6 +1,5 @@
 import gsap from 'gsap';
 import React, { useEffect } from 'react';
-import Projects from '../../components/sections/projects/projects.component';
 import './contactpage.style.scss';
 
 function ContactPage() {
@@ -21,12 +20,11 @@ function ContactPage() {
           duration: 0.5,
           ease: 'power4.out',
         })
-        .to('.my__description p', {
+        .to('.contact__form', {
           translateY: 0,
           opacity: 1,
-          duration: 0.3,
+          duration: 0.6,
           ease: 'power4.out',
-          stagger: 0.3,
         });
     }, 600);
   }, []);
@@ -39,7 +37,7 @@ function ContactPage() {
         <h1 className="section__title__2">Let's Talk</h1>
       </div>
       <div className="max-w-7xl mx-auto">
-        <form class="mb-5" method="get" id="contactForm" name="contactForm">
+        <form className="contact__form mb-5 opacity-0" id="contactForm">
           <div class="md:flex">
             <div class="md:w-1/2 form-group mb-6 md:mr-6">
               <input

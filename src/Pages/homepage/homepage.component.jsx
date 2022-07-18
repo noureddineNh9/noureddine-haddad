@@ -27,13 +27,10 @@ function Homepage() {
     setTimeout(() => {
       animateTitle();
 
-      animateTitleReverse()
+      animateTitleReverse();
 
-      animateOnScroll()
-
+      animateOnScroll();
     }, 1500);
-
-
 
     /*    
     gsap.to('.aze', {
@@ -86,7 +83,6 @@ function Homepage() {
       .addTo(controller);      
    */
 
-
     /*
       .fromTo(
         document.querySelector('.home__title__1'),
@@ -111,11 +107,8 @@ function Homepage() {
         '-=.5'
       );
       */
-
-
   }, []);
 
-  
   function animateTitle() {
     if (tl1 != null) {
       tl1.kill();
@@ -144,47 +137,50 @@ function Homepage() {
       );
   }
 
-  function animateTitleReverse(){
-      var controller = new ScrollMagic.Controller();
-      var animateIn = gsap.timeline();
+  function animateTitleReverse() {
+    var controller = new ScrollMagic.Controller();
+    var animateIn = gsap.timeline();
 
-      animateIn
-        .fromTo(document.querySelector('.home__title__1'), {
+    animateIn
+      .fromTo(
+        document.querySelector('.home__title__1'),
+        {
           opacity: 1,
           translateX: '0px',
-        }, {
+        },
+        {
           opacity: 0,
           duration: 0.2,
           translateX: '-200px',
-        })
-        .to(document.querySelectorAll('.home__title__2 .letter'), {
-          opacity: 0,
-          duration: 0.05,
-          stagger: 0.05,
-        })
-        .to(document.querySelector('.home__title__2 h1'), {
-          opacity: 0,
-          duration: 0.2,
-          translateX: '-200px',
-        })
-        .to(document.querySelectorAll('.home__title__2 .skill'), {
-          opacity: 0,
-          duration: 0.1,
-          translateY: '10px',
-          stagger: 0.15,
-        });
-
-      // Make Magic Scene
-      var scene = new ScrollMagic.Scene({
-        triggerElement: '.trigger',
-        triggerHook: '0',
+        }
+      )
+      .to(document.querySelectorAll('.home__title__2 .letter'), {
+        opacity: 0,
+        duration: 0.05,
+        stagger: 0.05,
       })
-        .setTween(animateIn)
-        .addTo(controller);
+      .to(document.querySelector('.home__title__2 h1'), {
+        opacity: 0,
+        duration: 0.2,
+        translateX: '-200px',
+      })
+      .to(document.querySelectorAll('.home__title__2 .skill'), {
+        opacity: 0,
+        duration: 0.1,
+        translateY: '10px',
+        stagger: 0.15,
+      });
 
+    // Make Magic Scene
+    var scene = new ScrollMagic.Scene({
+      triggerElement: '.trigger',
+      triggerHook: '0',
+    })
+      .setTween(animateIn)
+      .addTo(controller);
   }
 
-  function animateOnScroll(){
+  function animateOnScroll() {
     const controller2 = new ScrollMagic.Controller();
     var scrollingTimeline = gsap.timeline();
 
@@ -205,13 +201,13 @@ function Homepage() {
         opacity: 1,
         duration: 0.7,
         delay: 1.2,
-        translateY: 0,
+        translateY: 20,
       });
 
     const scene2 = new ScrollMagic.Scene({
       triggerElement: '#header',
       triggerHook: '0',
-      duration: '6000',
+      duration: '3000',
     })
       .setTween(scrollingTimeline)
       .setPin('#header')

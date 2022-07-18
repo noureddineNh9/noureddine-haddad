@@ -25,17 +25,20 @@ html {
 body {
   font-family: $font-Poppins;
   font-weight: 400;
+
+  &.modal__active {
+    overflow: hidden !important;
+  }
+
   &.overflow-h {
     overflow: hidden;
   }
-
 
   &::-webkit-scrollbar {
     width: 0.5em;
   }
 
   &::-webkit-scrollbar-track {
-    
     background-color: var(--color-green-4);
     //background: #55968255;
     //box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -133,19 +136,21 @@ a:hover {
   &:link,
   &:visited {
     text-decoration: none;
-    padding: 1.8rem 5rem;
+    padding: 1.4rem 4rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 400;
     letter-spacing: 0.1rem;
   }
 
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.2rem;
+
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
@@ -181,18 +186,66 @@ a:hover {
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
-  width: 15rem;
+  width: max-content;
   color: white;
   background-color: #73c0b0;
-  //border: 0.2rem solid #73c0b131;
+  border: 0rem solid #73c0b131;
+  cursor: pointer;
 
   transition: all 0.3s;
 
   &:hover {
     background-color: #2d8b79c9;
-    letter-spacing: 0.2rem;
+    color: white;
+    letter-spacing: 0.12rem;
 
     //border: 0.2rem solid #73c0b159;
+  }
+}
+
+.button__3 {
+  padding: 1.2rem 2.5rem;
+  border: 0.2rem solid white;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  width: max-content;
+  color: #000000a4;
+  background-color: transparent;
+  border: 0.1rem solid #04040454;
+
+  transition: all 0.3s;
+  i {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background-color: #04040498;
+    color: white;
+    letter-spacing: 0.15rem;
+
+    //border: 0.2rem solid #73c0b159;
+  }
+}
+
+.list__1 {
+  font-size: 1.4rem;
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0px;
+      color: var(--color-green-2);
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 }
 

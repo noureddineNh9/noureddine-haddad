@@ -23,6 +23,9 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
+          <Route exact path="/noureddine-haddad">
+            <HomePage />
+          </Route>
           <Route path="/about">
             <AboutPage />
           </Route>

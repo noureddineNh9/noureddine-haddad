@@ -8,6 +8,8 @@ import $ from 'jquery';
 import ProjectCard from '../../components/layouts/projectCard-1/index';
 import Modal from '../../components/layouts/Modal-1/index';
 import Slider from '../../components/layouts/Slider/Index';
+import MountainProject from '../../components/projects/mountain-project/mountain-project.component';
+import QuizProject from '../../components/projects/quiz-project/quiz-project.component';
 
 function ProjectsPage() {
   const [FilteredProjects, setFilteredProjects] = useState([]);
@@ -30,12 +32,17 @@ function ProjectsPage() {
           duration: 0.5,
           ease: 'power4.out',
         })
-        .to('.my__description p', {
+        .to('.projects__filter', {
           translateY: 0,
           opacity: 1,
-          duration: 0.3,
           ease: 'power4.out',
-          stagger: 0.3,
+        })
+        .to('.project__card', {
+          translateY: 0,
+          opacity: 1,
+          duration: 1,
+          ease: 'power4.out',
+          stagger: 0.5,
         });
     }, 600);
 
@@ -88,7 +95,8 @@ function ProjectsPage() {
         <h1 className="section__title__1">My Projects</h1>
         <h1 className="section__title__2">My Projects</h1>
       </div>
-      <div className="row" data-aos="fade-up">
+
+      <div className="projects__filter row opacity-0" data-aos="fade-up">
         <div className="col-lg-12 d-flex justify-content-center">
           <ul id="projects-flters">
             <li
@@ -122,11 +130,22 @@ function ProjectsPage() {
           </ul>
         </div>
       </div>
+
       <div className="projects__container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto">
-        {FilteredProjects.map((p, i) => (
-          <ProjectCard data={p} previewProjectInModal={previewProjectInModal} />
-        ))}
+        {/*
+            {FilteredProjects.map((p, i) => (
+              <ProjectCard
+                className="opacity-0"
+                data={p}
+                previewProjectInModal={previewProjectInModal}
+              />
+            ))}           
+        */}
+
+        <MountainProject className="opacity-0" />
+        <QuizProject className="opacity-0" />
       </div>
+      {/*
       <Modal onClose={previewProjectInModal}>
         {projectInModal != null && (
           <div className="project__decsription lg:grid lg:grid-cols-12 justify-center">
@@ -134,15 +153,6 @@ function ProjectsPage() {
               <div className="max-w-4xl lg:ml-auto">
                 <Slider images={projectInModal.projectScreenshot} />
               </div>
-              {/*
-                <img
-                  src={`${process.env.PUBLIC_URL}/assets/images/${projectInModal.img}`}
-                  style={{
-                    width: '100%',
-                  }}
-                  alt=""
-                />            
-                */}
             </div>
             <div className="lg:col-span-6 p-4">
               <h3 className="title">Description</h3>
@@ -172,6 +182,8 @@ function ProjectsPage() {
           </div>
         )}
       </Modal>
+
+      */}
     </section>
   );
 }
